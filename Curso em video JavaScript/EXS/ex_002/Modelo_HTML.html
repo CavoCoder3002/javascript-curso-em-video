@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo HTML</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>Analise sobre você</h1>
+    </header>
+    <section>
+        <div>
+        <p>Nome:
+            <input type="text" name="txtnome" id="name">
+        </p>
+        <p>Ano de nascimento:
+            <input type="number" name="txtano" id="ano">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+            <input type="button" value="Verificar" onclick="resultado()">
+        </div>
+        <div>
+            <p id="res">Aqui aparecerá o resultado.</p>
+            <img src="nobody.png" alt="Imagem ilustrativa idade e sexo." id="imagem">
+        </div>
+    </section>
+    <footer>
+        <p id="copyright">&copy; GSCavo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

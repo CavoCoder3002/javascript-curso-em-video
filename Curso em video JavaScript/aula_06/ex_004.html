@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex_004</title>
+    <h1>Olá</h1>
+    <style>
+        body {
+            font: normal 20pt arial;
+            background-color: rgba(0, 255, 179, 0.623);
+            color:rgb(0, 0, 0)
+        }
+    </style>
+</head>
+<body>
+    <script>
+    let nome = window.prompt(`Qual é o seu nome? `)
+    let money = Number.parseFloat(window.prompt(`Quantos Reais você tem?`))
+    m1 = (money/4.55)
+    m2 = (money/4.15)
+    //Tratamento do Nome
+    document.write(`<strong>${nome}</strong>!<br/>`)
+    document.write(`${nome}, seu nome tem ${nome.length} letras!<br/>`)
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br/>`)
+    //Reais p/ Euro E Dólar
+    document.write(`Você possui ${money.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    document.write(`, que equivalem a ${m1.toLocaleString('pt-br', {style: 'currency', currency : 'EUR'})} ou ${m2.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}.`)
+    </script>
+</body>
+</html>

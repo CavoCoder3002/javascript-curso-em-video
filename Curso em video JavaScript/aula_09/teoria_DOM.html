@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Iniciando Estudos com <strong>DOM</strong>...</h1>
+    <h2>Aprendendo a usar o <strong>DOM</strong> em JavaScript</h2>
+    <h1>O que é o DOM? </h1>
+    <p>-Dom é um acrônimo de "Document Object Model"</p>
+    <p>-Conjunto de Objetos dentro do navegador que dá acesso aos componentes dentro do site.</p>
+    <div>Clique em mim</div>
+    <h2>Árvore DOM</h2>
+    <p>~~~~window~~~~</p>
+    <p1>location ; document ; history</p1>
+    <p1></br></p1>
+    <p1><br/>*location: <strong>Url</strong> do site (Localização do site), página atual, página anterior <br></p1>
+    <p1><br></p1>
+    <p1>*document: Documento atual<br></p1>
+    <p2>-|-Dentro de "document":  ~<strong>html</strong><br></p2>
+    <p3>-|-|-Dentro de html: ~head; ~body<br></p3>
+    <p4>-|-|-|-Dentro de head: ~meta; ~title<br></p4>
+    <p4>-|-|-|-Dentro de body: ~h1; ~h2; ~p; ~p1; ~p2; ~p3; ~p4; ~div<br></p4>
+    <p1><br></p1>
+    <p1>*history: De onde você veio, ou onde você vai<br></p1>
+    <p1><br></p1>
+    <h1>Selecionando elementos</h1>
+    <p1><br></p1>
+    <h2>Por Marca:</h2>
+    <p>document.getElementsByTagName()</p>
+    <p1><br></p1>
+    <h2>Por ID</h2>
+    <p>document.getElementById</p>
+    <p1><br></p1>
+    <h2>Por Nome</h2>
+    <p>document.getElementsByName</p>
+    <p1><br></p1>
+    <h2>Por Classe</h2>
+    <p>document.getElementsByClassName()</p>
+    <p1><br></p1>
+    <h2>Por Seletor</h2>
+    <p>document.querySelector()</p>
+    <p1><br></p1>
+    <p2>##Se for Plural põe [n], com o número especificando qual objeto faz referência</p2>
+    <style>
+        h1{
+            font: normal 24pt arial;
+            color: rgba(11, 217, 253, 0.61);
+        }
+        h2{
+            font: normal 18pt arial;
+            color: blueviolet
+        }
+        body{
+            background-color: rgb(37, 36, 39);
+            font: normal 14pt arial;
+            color: rgba(162, 173, 7, 0.781);
+        }
+        p1{
+            color: aquamarine;
+            font: normal 12pt arial;
+        }
+        p2{
+            font: normal 10pt arial;
+            color: brown;
+        }
+        p3{
+            font:normal 10pt arial;
+            color: forestgreen
+        }
+        p4{
+            font:normal 10pt arial;
+            color: bisque
+        }
+    </style>
+    <script>
+    </script>
+</body>
+</html>

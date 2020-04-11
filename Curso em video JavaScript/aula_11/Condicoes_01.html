@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condiçoes_pt_01</title>
+    <style>
+        body{
+            background: cornflowerblue;
+            font: normal 16pt arial; 
+        }
+        h1{
+            font: bold 24pt arial;
+        }
+        input{
+            width: 100px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            border: 1px inset black ;
+            text-align: right; 
+            font: normal 18pt arial;
+        }
+        button{
+            text-align: center;
+            height: 24px;
+            -ms-grid-row-align: center; 
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Confirmador de multas.</h1>
+    <p>Digite a velocidade que você estava</p>
+    <input type="text" name="inp" id="inp1">
+    <button>Continuar</button>
+    <p id='pg'></br>?Multa?</p>
+
+    <script>
+        var cg = window.document.querySelector("p#pg")
+        var vel = window.document.querySelector("input#inp1")
+        var cl = window.document.getElementsByTagName('button')[0]
+
+        cl.addEventListener('click', clicar)
+        function clicar() {
+            cg.innerText = vel.innerText 
+            
+
+        }
+
+    </script>
+</body>
+</html>
